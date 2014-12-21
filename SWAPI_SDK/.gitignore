@@ -4,3 +4,9 @@
 /.idea/libraries
 .DS_Store
 /build
+*.iml
+.idea/
+gradle/
+gradlew
+gradlew.bat
+/src/main/gen
