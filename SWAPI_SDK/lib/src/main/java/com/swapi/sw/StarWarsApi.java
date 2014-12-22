@@ -1,6 +1,6 @@
-package com.swapi.sw;
+package com.swapi.moviescompanion.api.sw;
 
-import com.swapi.APIConstants;
+import com.swapi.moviescompanion.api.APIConstants;
 import retrofit.RestAdapter;
 import retrofit.client.OkClient;
 

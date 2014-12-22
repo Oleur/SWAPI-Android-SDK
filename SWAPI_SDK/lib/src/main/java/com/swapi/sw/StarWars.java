@@ -1,7 +1,6 @@
-package com.swapi.sw;
+package com.swapi.moviescompanion.api.sw;
 
-import com.squareup.okhttp.Call;
-import com.swapi.models.*;
+import com.swapi.moviescompanion.api.models.*;
 import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Path;
@@ -16,19 +15,19 @@ public interface StarWars {
     @GET("/")
     public void getRootUrls(Callback<Root> callback);
 
-    @GET("/people")
+    @GET("/people/")
     public void getAllPeople(@Query("page") int page,
                              Callback<PeopleList> callback);
 
-    @GET("/people/{id}")
+    @GET("/people/{id}/")
     public void getPeople(@Path("id") int peopleId,
                           Callback<People> callback);
 
-    @GET("/films")
+    @GET("/films/")
     public void getAllFilms(@Query("page") int page,
                             Callback<FilmList> callback);
 
-    @GET("/films/{id}")
+    @GET("/films/{id}/")
     public void getFilm(@Path("id") int filmId,
                         Callback<Film> callback);
 
@@ -36,31 +35,31 @@ public interface StarWars {
     public void getAllStarships(@Query("page") int page,
                                 Callback<StarshipList> callback);
 
-    @GET("/starships/{id}")
+    @GET("/starships/{id}/")
     public void getStarship(@Path("id") int starshipId,
                             Callback<Starship> callback);
 
-    @GET("/vehicles")
+    @GET("/vehicles/")
     public void getAllVehicles(@Query("page") int page,
                                Callback<VehicleList> callback);
 
-    @GET("/vehicles/{id}")
+    @GET("/vehicles/{id}/")
     public void getVehicle(@Path("id") int vehicleId,
                            Callback<Vehicle> callback);
 
-    @GET("/species")
+    @GET("/species/")
     public void getAllSpecies(@Query("page") int page,
                               Callback<SpeciesList> callback);
 
-    @GET("/species/{id}")
+    @GET("/species/{id}/")
     public void getSpecies(@Path("id") int speciesId,
                            Callback<Species> callback);
 
-    @GET("/planets")
+    @GET("/planets/")
     public void getAllPlanets(@Query("page") int page,
                               Callback<PlanetList> callback);
 
-    @GET("/planets/{id}")
+    @GET("/planets/{id}/")
     public void getPlanet(@Path("id") int planetId,
                           Callback<Planet> callback);
 
