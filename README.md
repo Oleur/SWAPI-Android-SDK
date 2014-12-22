@@ -8,20 +8,20 @@ How to use it
 =============
 
 Create a global instance in your application class
-```android
+```java
 public class YourStarWarsApp extends Application {
 
     @Override
     public void onCreate() {
       super.onCreate();
       //Init star wars api
-      StarWarsApi.init(this);
+      StarWarsApi.init();
     }
     
 }
 ```
 In your activities or fragment you may fire every API call you want.
-```android
+```java
 StarWarsApi.getApi().getAllPlanets(2, new Callback<PlanetList>() {
     @Override
     public void success(PlanetList simple, Response response) {

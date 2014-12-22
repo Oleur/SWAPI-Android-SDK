@@ -1,20 +1,19 @@
 package com.swapi.sw;
 
-import android.content.Context;
 import com.swapi.APIConstants;
 import retrofit.RestAdapter;
 import retrofit.client.OkClient;
 
 /**
  * Created by Oleur on 22/12/2014.
- *
+ * The Star Wars Api class
  */
 public class StarWarsApi {
 
     private StarWars mSwApi;
     private static StarWarsApi sInstance;
 
-    private StarWarsApi(Context context) {
+    private StarWarsApi() {
         final RestAdapter restAdapter = new RestAdapter.Builder()
                 .setClient(new OkClient())
                 .setEndpoint(APIConstants.BASE_URL)
@@ -23,8 +22,8 @@ public class StarWarsApi {
         mSwApi = restAdapter.create(StarWars.class);
     }
 
-    public static void init(Context context) {
-        sInstance = new StarWarsApi(context);
+    public static void init() {
+        sInstance = new StarWarsApi();
     }
 
     public static StarWars getApi() {
