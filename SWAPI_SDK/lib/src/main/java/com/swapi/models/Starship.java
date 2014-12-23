@@ -1,9 +1,8 @@
-package com.swapi.moviescompanion.api.models;
+package com.swapi.models;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
  * Created by Oleur on 22/12/2014.

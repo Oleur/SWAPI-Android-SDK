@@ -1,6 +1,6 @@
-package com.swapi.moviescompanion.api.sw;
+package com.swapi.sw;
 
-import com.swapi.moviescompanion.api.models.*;
+import com.swapi.models.*;
 import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Path;

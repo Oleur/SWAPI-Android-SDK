@@ -84,12 +84,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="bcprov-jdk15on-1.50" level="project" />
     <orderEntry type="library" exported="" name="okhttp-2.1.0" level="project" />
-    <orderEntry type="library" exported="" name="mockwebserver-2.1.0" level="project" />
-    <orderEntry type="library" exported="" name="okhttp-urlconnection-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="gson-2.3" level="project" />
     <orderEntry type="library" exported="" name="okio-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="retrofit-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="okhttp-urlconnection-2.1.0" level="project" />
   </component>
 </module>

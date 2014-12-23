@@ -1,4 +1,4 @@
-package com.swapi.moviescompanion.api.models;
+package com.swapi.models;
 
 import android.text.TextUtils;
 

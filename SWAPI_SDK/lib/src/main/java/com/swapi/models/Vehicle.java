@@ -1,4 +1,4 @@
-package com.swapi.moviescompanion.api.models;
+package com.swapi.models;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Oleur on 22/12/2014.
+ * Vehicle model represents a single transport craft that does not have hyperdrive capability.
  */
 public class Vehicle implements Serializable {
     public String name;

@@ -1,7 +1,6 @@
-package com.swapi.moviescompanion.api.sw;
+package com.swapi.sw;
 
 import android.os.Build;
-import android.util.Log;
 import retrofit.client.OkClient;
 import retrofit.client.Request;
 

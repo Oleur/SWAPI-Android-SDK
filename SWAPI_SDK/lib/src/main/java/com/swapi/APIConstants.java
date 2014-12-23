@@ -1,4 +1,4 @@
-package com.swapi.moviescompanion.api;
+package com.swapi;
 
 /**
  * Created by Oleur on 21/12/2014.
