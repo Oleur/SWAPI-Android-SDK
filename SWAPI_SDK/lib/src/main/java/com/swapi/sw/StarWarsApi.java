@@ -15,7 +15,7 @@ public class StarWarsApi {
 
     private StarWarsApi() {
         final RestAdapter restAdapter = new RestAdapter.Builder()
-                .setClient(new OkClient())
+                .setClient(new StarWarsOkClient())
                 .setEndpoint(APIConstants.BASE_URL)
                 .setLogLevel(RestAdapter.LogLevel.FULL)
                 .build();
