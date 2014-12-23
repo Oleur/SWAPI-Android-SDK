@@ -17,7 +17,7 @@ public interface StarWars {
 
     @GET("/people/")
     public void getAllPeople(@Query("page") int page,
-                             Callback<PeopleList> callback);
+                             Callback<SWModelList<People>> callback);
 
     @GET("/people/{id}/")
     public void getPeople(@Path("id") int peopleId,
@@ -25,7 +25,7 @@ public interface StarWars {
 
     @GET("/films/")
     public void getAllFilms(@Query("page") int page,
-                            Callback<FilmList> callback);
+                            Callback<SWModelList<Film>> callback);
 
     @GET("/films/{id}/")
     public void getFilm(@Path("id") int filmId,
@@ -33,7 +33,7 @@ public interface StarWars {
 
     @GET("/starships")
     public void getAllStarships(@Query("page") int page,
-                                Callback<StarshipList> callback);
+                                Callback<SWModelList<Starship>> callback);
 
     @GET("/starships/{id}/")
     public void getStarship(@Path("id") int starshipId,
@@ -41,7 +41,7 @@ public interface StarWars {
 
     @GET("/vehicles/")
     public void getAllVehicles(@Query("page") int page,
-                               Callback<VehicleList> callback);
+                               Callback<SWModelList<Vehicle>> callback);
 
     @GET("/vehicles/{id}/")
     public void getVehicle(@Path("id") int vehicleId,
@@ -49,7 +49,7 @@ public interface StarWars {
 
     @GET("/species/")
     public void getAllSpecies(@Query("page") int page,
-                              Callback<SpeciesList> callback);
+                              Callback<SWModelList<Species>> callback);
 
     @GET("/species/{id}/")
     public void getSpecies(@Path("id") int speciesId,
@@ -57,7 +57,7 @@ public interface StarWars {
 
     @GET("/planets/")
     public void getAllPlanets(@Query("page") int page,
-                              Callback<PlanetList> callback);
+                              Callback<SWModelList<Planet>> callback);
 
     @GET("/planets/{id}/")
     public void getPlanet(@Path("id") int planetId,
