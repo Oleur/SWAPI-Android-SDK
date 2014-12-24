@@ -7,13 +7,13 @@ import java.util.ArrayList;
 
 /**
  * Created by Oleur on 22/12/2014.
- * Starship list model that represents all the Star Wars starships
+ * Film list model
  */
-public class StarshipList implements Serializable {
+public class SWModelList<T> implements Serializable {
     public int count;
     public String next;
     public String previous;
-    public ArrayList<Starship> results;
+    public ArrayList<T> results;
 
     public boolean hasMore() {
         return !TextUtils.isEmpty(next);
