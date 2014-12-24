@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Oleur on 22/12/2014.
- * Film list model
+ * Generic list model
  */
 public class SWModelList<T> implements Serializable {
     public int count;

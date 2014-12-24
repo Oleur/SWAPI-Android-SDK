@@ -15,9 +15,6 @@ public class People implements Serializable {
     @SerializedName("birth_year")
     public String birthYear;
 
-    @SerializedName("films")
-    public ArrayList<String> filmsUrls;
-
     public String gender;
 
     @SerializedName("hair_color")
@@ -36,6 +33,10 @@ public class People implements Serializable {
     public String created;
     public String edited;
     public String url;
+
+    @SerializedName("films")
+    public ArrayList<String> filmsUrls;
+
     @SerializedName("species")
     public ArrayList<String> speciesUrls;
 
